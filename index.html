@@ -6,6 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela Zebra</title>
     <link rel="stylesheet" href="tabelazebra.css">
+    <style>
+      html{
+    background-color:rgb(95, 59, 161); 
+}
+h1{
+    text-align: center;
+    font-size: 100px;
+}
+/*CSS do corpo do HTML5*/
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+/*CSS da tabela*/ 
+table{
+    border: 1px solid;
+    background-color: rgb(17, 15, 15);
+    color: black;
+    display: table-cell;
+    width: auto;
+    border-color: black;
+}
+/*CSS da cabeça da tabela*/
+thead{
+    background-color: rgb(195, 236, 231);
+}
+/*CSS das linhas*/
+td{
+    border: 1px solid;
+    padding: 15px;
+}
+/* linhas pares (even) */
+.tabela tbody tr:nth-child(even) {
+    background-color: rgb(68, 60, 60);
+}
+/* linhas ímpares (odd) */
+.tabela tbody tr:nth-child(odd) {
+    background-color: rgb(206, 18, 181);
+}
+    </style>
 </head>
 <body>
 <h1>Tabela Zebra</h1>
